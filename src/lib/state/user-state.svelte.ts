@@ -284,6 +284,7 @@ export class UserState {
 
   async logout() {
     this.supabase?.auth.signOut();
+    goto("/");
   }
 }
 
